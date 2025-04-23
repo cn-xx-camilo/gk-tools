@@ -15,6 +15,15 @@ export const toolsWindow = `
             </div>
 
             <div style="font-size: 14px;">
+                <div style="display: flex; align-items: center; gap: 5px; margin: 5px; flex-wrap: wrap;">
+                    <input type="password"
+                        style="width: 100px; height: 20px; margin: 0;"
+                        class="gktools-ai-search-key" placeholder="API KEY" />
+                    <button style="font-size: 12px; margin-left: auto;" class="gktools-ai-search">解题</button>
+                    <div style="width: 100%; font-size: 12px; color: #aaaaaa;">
+                        <span>登录智谱AI官网（https://open.bigmodel.cn/），登录后右上角人物头像处依次点击【个人中心】-【项目管理】-【API keys】，新建或选择已有的KEY并复制自行保存（API KEY为保证安全请勿泄露），随后复制到过开小助手的输入栏即可</span></div>
+                </div>
+
                 <div style="display: flex; align-items: center; gap: 5px; margin: 5px;">
                     <div class="gktools-background-watch-status"
                         style="width: 6px; height: 6px; background-color: #ff0000; border-radius: 100%;"></div>
@@ -124,5 +133,11 @@ export const toolsNodes = {
     },
     get videoVolumeNumber () {
         return document.getElementsByClassName('gktools-video-volume-number')[0]
+    },
+    get aiSearch () {
+        return document.getElementsByClassName('gktools-ai-search')[0]
+    },
+    get aiSearchKey () {
+        return document.getElementsByClassName('gktools-ai-search-key')[0]
     }
 }

@@ -10,6 +10,7 @@ import useVideoVolume from './js/feature/videoVolume.js'
 import useBackgroundWatch from './js/feature/backgroundWatch.js'
 import useAutoSwitch from './js/feature/autoSwitch.js'
 import autoSwitchMenu from './js/feature/autoSwitchMenu.js'
+import { aiSearch } from './js/feature/aiSearch.js'
 
 class GKTools {
     constructor() {
@@ -55,6 +56,8 @@ class GKTools {
 
     startup () {
         log.add(1, '【国开小助手】启动成功')
+
+        toolsNodes.aiSearch.addEventListener('click', aiSearch)
 
         /**
          * 监听程序基本功能按钮事件
