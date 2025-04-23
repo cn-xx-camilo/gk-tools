@@ -21,7 +21,7 @@ export const toolsWindow = `
                         class="gktools-ai-search-key" placeholder="API KEY" />
                     <button style="font-size: 12px; margin-left: auto;" class="gktools-ai-search">解题</button>
                     <div style="width: 100%; font-size: 12px; color: #aaaaaa;">
-                        <span>登录智谱AI官网（https://open.bigmodel.cn/），登录后右上角人物头像处依次点击【个人中心】-【项目管理】-【API keys】，新建或选择已有的KEY并复制自行保存（API KEY为保证安全请勿泄露），随后复制到过开小助手的输入栏即可</span></div>
+                        <span>访问智谱AI官网（https://open.bigmodel.cn/），登录后右上角人物头像处依次点击【个人中心】-【项目管理】-【API keys】，新建或选择已有的KEY并复制自行保存（API KEY为保证安全请勿泄露），随后复制到国开小助手的输入栏即可，具体使用方法参考README</span></div>
                 </div>
 
                 <div style="display: flex; align-items: center; gap: 5px; margin: 5px;">
